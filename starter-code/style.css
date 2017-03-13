@@ -45,7 +45,7 @@ footer {
     font-size: 0;
 }
 
-.board {
+#game-board {
     height: 50%;
     width: 50%;
     display: inline-block;
