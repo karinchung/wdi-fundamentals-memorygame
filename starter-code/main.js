@@ -64,7 +64,7 @@ function isTwoCards() {
   if (cardsInPlay.length === 2) {
 
     // pass the cardsInPlay as an argument to the isMatch function
-    isMatch(cardsInPlay);
+    isMatch();
 
     // clear cards in play array for your next try
     cardsInPlay = [];
@@ -73,11 +73,10 @@ function isTwoCards() {
 
 }
 
-var isMatch = function(inPlay) {
+var isMatch = function() {
 
-	setTimeout(alerts, 1000);
+	setTimeout(function() {
 
-	var alerts = function() {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 		alert("You found a match!");
 	}
@@ -89,10 +88,10 @@ var isMatch = function(inPlay) {
 		for (i=0; i<cardsInPlay.length; i++) {
 		document.querySelectorAll('.card')[i].innerHTML = "";
 	}
-	}
-
+	}, 1000);
 
 }
+
 
 
 // BUGS: second card appears after alert, not before
