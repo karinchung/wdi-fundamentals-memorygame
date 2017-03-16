@@ -36,6 +36,15 @@ footer {
     text-align: center;
 }
 
+img {
+	height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    float: left;
+    margin: 8%;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -69,4 +78,6 @@ footer {
 .name {
     color: #ff0000;
 }
+
+
 
