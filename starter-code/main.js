@@ -66,8 +66,6 @@ function isTwoCards() {
     // pass the cardsInPlay as an argument to the isMatch function
     isMatch();
 
-    // clear cards in play array for your next try
-    cardsInPlay = [];
 
   }
 
@@ -85,16 +83,11 @@ var isMatch = function() {
 	}
 
 	//remove all inner HTML to reset
-		for (i=0; i<cardsInPlay.length; i++) {
+		for (i=0; i<4; i++) {
 		document.querySelectorAll('.card')[i].innerHTML = "";
 	}
-	}, 1000);
-
+	cardsInPlay = [];
+	}, 500);
 }
 
-
-
-// BUGS: second card appears after alert, not before
-// User can just pick the same card twice, like a nerd
-// CSS of img
 
